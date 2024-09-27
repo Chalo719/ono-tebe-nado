@@ -38,6 +38,11 @@
     line-height: 24.3px;
 }
 
+/* Изменение display у ссылок блока .address, чтобы они выстраивались в стоблик  */
+.address a {
+    display: block;
+}
+
 .header__address {
     justify-self: end;
 }
@@ -48,10 +53,9 @@
     margin-bottom: 179px;
     padding: 165px 50px 52px;
     color: #fff;
-    background-image: url(../images/cover.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+    /* Заменено на шорткат */
+    background: url(../images/cover.jpg) no-repeat center / cover;
 }
 
 .overlay {
@@ -65,7 +69,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 355px;
+
+    /* Убрана фиксированная высота, внутренние отступы не понадобились, они есть у родительского блока .cover */
+
     margin-bottom: 135px;
 
     font-weight: bold;
@@ -113,7 +119,10 @@
 
 .bet-button {
     border: 1px solid #fff;
-    padding: 12px 32px 11px 31px;
+
+    /* Убраны боковые отступы, чтобы не ломалось отображение в браузерах на Chromium */
+    padding: 12px 0 11px;
+
     color: #fff;
 
     font-size: 22px;
@@ -248,14 +257,18 @@
 }
 
 .about__text {
+    /* Ширина и отступ перенесены в основной класс */
+    width: 693px;
+    margin-bottom: 24px;
+
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.01em;
 }
 
-.about__text:first-of-type {
-    width: 688px;
-    margin-bottom: 24px;
+/* Убран отступ у последнего элемента */
+.about__text:last-of-type {
+    margin-bottom: 0;
 }
 
 .footer {

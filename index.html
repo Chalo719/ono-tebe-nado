@@ -16,11 +16,13 @@
           <li class="header__links-list-item header__links-list-item_no-bullit">
             <a class="header__link header__link_active">главная</a>
           </li>
+
+          <!-- Добавлены якорные ссылки -->
           <li class="header__links-list-item">
-            <a href="#0" class="header__link">посмотреть лоты</a>
+            <a href="#lots" class="header__link">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#0" class="header__link">об аукционе</a>
+            <a href="#about" class="header__link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -33,10 +35,15 @@
         />
       </a>
 
+      <!--
+      Исправлено использование <br>: 
+       - для переноса элементов использован CSS, лишние <br> убраны;
+       - для переноса строки в рамках элемента добавлен <br>
+      -->
       <address class="address header__address">
-        <a href="tel:+99995555555">+9 999 555 5555</a><br />
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
-        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-<br />265, Амстердам</p>
       </address>
     </header>
 
@@ -61,11 +68,14 @@
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">Сделать ставку</button>
+
+          <!-- Указан тип кнопки -->
+          <button type="button" class="bet-button">Сделать ставку</button>
         </div>
       </section>
 
-      <section class="lots">
+      <!-- Добавлен id для якорной ссылки -->
+      <section class="lots" id="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
@@ -121,7 +131,8 @@
         <a href="#0" class="lots__look-more-link">посмотреть больше</a>
       </section>
 
-      <section class="about">
+      <!-- Добавлен id для якорной ссылки -->
+      <section class="about" id="about">
         <div class="about__column">
           <div class="about__logo">
             <img
@@ -153,10 +164,15 @@
     </main>
 
     <footer class="footer">
+      <!--
+      Исправлено использование <br>: 
+       - для переноса элементов использован CSS, лишние <br> убраны;
+       - для переноса строки в рамках элемента добавлен <br>
+      -->
       <address class="address">
-        <a href="tel:+99995555555">+9 999 555 5555</a><br />
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br />
-        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-<br />265, Амстердам</p>
       </address>
 
       <nav class="footer__menu">
@@ -164,11 +180,13 @@
           <li class="footer__menu-list-item">
             <a class="footer__menu-link footer__menu-link_active"> главная </a>
           </li>
+
+          <!-- Добавлены якорные ссылки -->
           <li class="footer__menu-list-item">
-            <a href="#0" class="footer__menu-link">посмотреть лоты</a>
+            <a href="#lots" class="footer__menu-link">посмотреть лоты</a>
           </li>
           <li class="footer__menu-list-item">
-            <a href="#0" class="footer__menu-link">об аукционе</a>
+            <a href="#about" class="footer__menu-link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -176,23 +194,26 @@
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a href="#0" class="footer__social-link">
+            <!-- Атрибут alt указан на языке страницы -->
+            <img src="./images/yt.svg" alt="Ютуб" class="footer__social-icon" />
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#0" class="footer__social-link">
+            <!-- Атрибут alt указан на языке страницы -->
             <img
-              src="./images/yt.svg"
-              alt="youtube"
+              src="./images/vk.svg"
+              alt="ВКонтакте"
               class="footer__social-icon"
             />
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="#0" class="footer__social-link">
-            <img src="./images/vk.svg" alt="vk" class="footer__social-icon" />
-          </a>
-        </li>
-        <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link">
+            <!-- Атрибут alt указан на языке страницы -->
             <img
               src="./images/pinterest.svg"
-              alt="pinterest"
+              alt="Пинтерест"
               class="footer__social-icon"
             />
           </a>
